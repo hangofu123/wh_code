@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DDAF0B0A-CB31-492D-A4B7-B8464E4312E1}</ProjectGuid>
+    <RootNamespace>GameFrame</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../bin</OutDir>
+    <IntDir />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../bin</OutDir>
+    <IntDir />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;_CRT_SECURE_NO_WARNINGS;GAME_FRAME_DLL;PLAYCHATSHORTSOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\GameFrame.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>../lib</AdditionalLibraryDirectories>
+      <ImportLibrary>../lib/$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\GameFrame.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;_CRT_SECURE_NO_WARNINGS;GAME_FRAME_DLL;PLAYCHATSHORTSOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\GameFrame.def</ModuleDefinitionFile>
+      <ImportLibrary>../lib/$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\GameFrame.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientKernel.cpp" />
+    <ClCompile Include="Custsite.cpp" />
+    <ClCompile Include="DlgGameOption.cpp" />
+    <ClCompile Include="DlgGameRule.cpp" />
+    <ClCompile Include="DlgInsureGame.cpp" />
+    <ClCompile Include="DlgMatchAwards.cpp" />
+    <ClCompile Include="GameFrameApp.cpp" />
+    <ClCompile Include="GameFrameAvatar.cpp" />
+    <ClCompile Include="GameFrameControl.cpp" />
+    <ClCompile Include="GameFrameDll.cpp" />
+    <ClCompile Include="GameFrameEngine.cpp" />
+    <ClCompile Include="GameFrameMedalView.cpp" />
+    <ClCompile Include="GameFramePublicize.cpp" />
+    <ClCompile Include="GameFrameService.cpp" />
+    <ClCompile Include="GameFrameUserView.cpp" />
+    <ClCompile Include="GameFrameView.cpp" />
+    <ClCompile Include="GameFrameViewD3D.cpp" />
+    <ClCompile Include="GameFrameViewGDI.cpp" />
+    <ClCompile Include="GameFrameWnd.cpp" />
+    <ClCompile Include="GameOptionItem.cpp" />
+    <ClCompile Include="GlobalUnits.cpp" />
+    <ClCompile Include="IDispimp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TimerPulseEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameFrame.def" />
+    <None Include="res\GameFrame.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameFrame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\GAME_CHAT\BT_CHAT_BUTTON_1.bmp" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_BUTTON_1.png" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_BUTTON_2.bmp" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_BUTTON_2.png" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_BUTTON_3.bmp" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_BUTTON_3.png" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_BUTTON_4.bmp" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_BUTTON_4.png" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_CLOSE.bmp" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_CONTROL.bmp" />
+    <Image Include="res\GAME_CHAT\BT_CHAT_SHORT.bmp" />
+    <Image Include="res\GAME_CHAT\BT_SEND_CHAT.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_BL.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_BM.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_BR.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_CONTROL_BACK.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_ML.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_MR.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_TL.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_TM.bmp" />
+    <Image Include="res\GAME_CHAT\CHAT_TR.bmp" />
+    <Image Include="res\GAME_FRAME\BT_CLOSE.bmp" />
+    <Image Include="res\GAME_FRAME\BT_CLOSE.png" />
+    <Image Include="res\GAME_FRAME\BT_MAX.bmp" />
+    <Image Include="res\GAME_FRAME\BT_MIN.bmp" />
+    <Image Include="res\GAME_FRAME\BT_MUSIC.bmp" />
+    <Image Include="res\GAME_FRAME\BT_RESORE.bmp" />
+    <Image Include="res\GAME_FRAME\BT_RULES.bmp" />
+    <Image Include="res\GAME_FRAME\BT_SET.bmp" />
+    <Image Include="res\GAME_FRAME\BT_SKIN.bmp" />
+    <Image Include="res\GAME_FRAME\BT_SLIENT.bmp" />
+    <Image Include="res\GAME_FRAME\FRAME_BL.bmp" />
+    <Image Include="res\GAME_FRAME\FRAME_BM.bmp" />
+    <Image Include="res\GAME_FRAME\FRAME_BR.bmp" />
+    <Image Include="res\GAME_FRAME\FRAME_ML.bmp" />
+    <Image Include="res\GAME_FRAME\FRAME_MR.bmp" />
+    <Image Include="res\GAME_FRAME\FRAME_TL.bmp" />
+    <Image Include="res\GAME_FRAME\FRAME_TM.bmp" />
+    <Image Include="res\GAME_FRAME\FRAME_TR.bmp" />
+    <Image Include="res\GAME_FRAME\OPTION_LOGO.bmp" />
+    <Image Include="res\GAME_INSURE\BANKNUM.png" />
+    <Image Include="res\GAME_INSURE\BANK_FRAME.png" />
+    <Image Include="res\GAME_INSURE\BT_CLOSE.bmp" />
+    <Image Include="res\GAME_INSURE\BT_FRESH.bmp" />
+    <Image Include="res\GAME_INSURE\BT_GETGOLD.bmp" />
+    <Image Include="res\GAME_INSURE\BT_SAVEGOLD.bmp" />
+    <Image Include="res\GAME_MATCH\BT_CLOSE.bmp" />
+    <Image Include="res\GAME_MATCH\LINE.png" />
+    <Image Include="res\GAME_MATCH\MATCH_AWARDS.png" />
+    <Image Include="res\GAME_MATCH\MATCH_INFO.png" />
+    <Image Include="res\GAME_MATCH\NUMBER_GREEN.png" />
+    <Image Include="res\GAME_MATCH\NUMBER_ORANGE.png" />
+    <Image Include="res\GAME_MATCH\TABLE_TL.bmp" />
+    <Image Include="res\GAME_MATCH\TABLE_TM.bmp" />
+    <Image Include="res\GAME_MATCH\TABLE_TR.bmp" />
+    <Image Include="res\GAME_MATCH\WAIT_TIP.png" />
+    <Image Include="res\GAME_PROPERTY\GAME_PROPERTY_ITEM.bmp" />
+    <Image Include="res\GAME_PROPERTY\GAME_PROPERTY_L.bmp" />
+    <Image Include="res\GAME_PROPERTY\GAME_PROPERTY_M.bmp" />
+    <Image Include="res\GAME_PROPERTY\GAME_PROPERTY_R.bmp" />
+    <Image Include="res\LOAD_STATUS.PNG" />
+    <Image Include="res\MEMBER_FLAG.png" />
+    <Image Include="res\USER_CLOCK_BACK.png" />
+    <Image Include="res\USER_CLOCK_ITEM.png" />
+    <Image Include="res\USER_INFO\BT_LOVE_LINESS.PNG" />
+    <Image Include="res\USER_INFO\BT_USER_DEMAL.PNG" />
+    <Image Include="res\USER_INFO\BT_USER_INFO.bmp" />
+    <Image Include="res\USER_INFO\USER_INFO_L.bmp" />
+    <Image Include="res\USER_INFO\USER_INFO_M.bmp" />
+    <Image Include="res\USER_INFO\USER_INFO_R.bmp" />
+    <Image Include="res\USER_LIST\USER_LIST_BL.bmp" />
+    <Image Include="res\USER_LIST\USER_LIST_BM.bmp" />
+    <Image Include="res\USER_LIST\USER_LIST_BR.bmp" />
+    <Image Include="res\USER_LIST\USER_LIST_ML.bmp" />
+    <Image Include="res\USER_LIST\USER_LIST_MR.bmp" />
+    <Image Include="res\USER_LIST\USER_LIST_TL.bmp" />
+    <Image Include="res\USER_LIST\USER_LIST_TM.bmp" />
+    <Image Include="res\USER_LIST\USER_LIST_TR.bmp" />
+    <Image Include="res\USER_MEDAL\MEDAL_COUNT.png" />
+    <Image Include="res\USER_MEDAL\MEDAL_STRING_L..png" />
+    <Image Include="res\USER_MEDAL\MEDAL_STRING_L.png" />
+    <Image Include="res\USER_MEDAL\MEDAL_STRING_R.png" />
+    <Image Include="res\USER_MEDAL\USER_MEDAL_L.bmp" />
+    <Image Include="res\USER_MEDAL\USER_MEDAL_M.bmp" />
+    <Image Include="res\USER_MEDAL\USER_MEDAL_R.bmp" />
+    <Image Include="res\USER_READY.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

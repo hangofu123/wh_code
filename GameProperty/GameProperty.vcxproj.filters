@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBuyProperty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTrumpetItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePropertyCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePropertyDll.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePropertyItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePropertyManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameProperty.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\GameProperty.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\HAND_CUR.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gamepropertyhead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameProperty.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BT_BMP_COLOR_SET.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_BMP_EXPRESSION.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_LEFT.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BT_RIGHT.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GAME_PROPERTY.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GAME_PROPERTY_ITEM.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GAME_PROPERTY_L.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GAME_PROPERTY_M.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GAME_PROPERTY_R.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\HOVER_FRAME.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_BEAT.PNG">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_BEER.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_BLUERING_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_BOMB.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_BRICK.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_CAKE.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_CAR.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_CLAP.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_EGG.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_ESCAPE_CLEAR.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_FLOWER.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_FOUR_SCORE_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_GUARDKICK_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_KISS.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_POSSESS.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_REDRING_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_RING.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_SCORE_CLEAR.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_SMOKE.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_TRUMPET.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_TWO_SCORE_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_TYPHON.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_VILLA.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_VIPROOM_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_WHITERING_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMAGE_YELLOWRING_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\PROPERTY_FRAME.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_BEAT.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_BEER.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_BLUERING_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_BOMB.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_BRICK.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_CAKE.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_CAR.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_CLAP.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_EGG.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_ESCAPE_CLEAR.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_FLOWER.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_FOUR_SCORE_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_GUARDKICK_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_KISS.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_POSSESS.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_REDRING_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_RING.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_SCORE_CLEAR.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_SMOKE.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_TRUMPET.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_TWO_SCORE_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_TYPHON.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_VILLA.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_VIPROOM_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_WHITERING_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SYMBOL_YELLOWRING_CARD.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
